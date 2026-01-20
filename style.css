@@ -42,20 +42,14 @@
     display: flex;
     width: 100%;
     height: 92px;
-    justify-content: space-between;
-    align-content: center;
+    justify-content:space-around;
+    align-items: center;
     background-color: #1A0B2E;
-    border: 1px solid #412567;
-    /* padding: 200px 16px; */
-
-}
-.logo{
-    margin: 16px 0 16px 200px;
+    border-bottom: 1px solid #412567;
 }
 .logo h3{
     width: 13rem;
     height: 32px;
-    /* padding: 16px 0 16px 200px; */
 }
 .tech{
     color: white;
@@ -100,6 +94,7 @@
     background-size: cover;
     height: 100%;
     width: 100%;
+    /* border: 1px solid red; */
 }
 
 
@@ -108,28 +103,36 @@
     height: 1.6rem;
     background-color: #00FF88;
     color: black;
-    /* padding: 30px; */
     font-size: 0.8rem;
     border-radius: 20px;
-    /* margin: 100px; */
     padding-left: 25px;
     padding-top: 10px;
     position: relative;
-    top: 1rem;
+    top: 4rem;
+    left: 7rem;
+}
 
-
+.image-1{
+    width: 300px;
+    height: 300px;
+}
+.image-1:hover{
+    /* transform: ; */
 }
 .image-2{
-background-color: #F7E93F;
 position: absolute;
-top: 100px;
-/* right: 690px; */
-right: 50%;
-width: 5%;
+top: 25%;
+right: 43%;
+width: 200px;
+height: 200px;
 
 
 }
-.banner-items h1{
+
+.banner-text{
+    text-align: center;
+}
+.banner-text h1{
     color: white;
     font-size: 4rem;
     font-size: bold;
@@ -391,20 +394,26 @@ width: 5%;
     background-image: url(./assets/footer-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100%;
-    width: 100%; */
+    border-top: 0.1px solid #351165;
+   
+ }
+ #footer-head{
+    justify-self: center;
+    margin-bottom:4rem ;
+    margin-left: 0 ;
  }
  .footer-items{
     align-items: center;
     text-align: center;
+    margin: 120px;
  }
- .icons-2{
+ /* .icons-2{
     gap: 30px;
- }
+    margin-bottom: 2rem;
+ } */
 .icons-2 h6{
-    font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.307);
-    gap: 30px;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.866);
 
 }
 .icons-2 img{
@@ -435,8 +444,28 @@ width: 5%;
 
   }
 
+  .image-1{
+    width: 250px;
+    height: 250px;
+}
+
+.image-2{
+position: absolute;
+top: 18%;
+right: 36%;
+width: 120px;
+height: 120px;
+
+
+}
+
   .about-section{
     padding: 20px;
+    height: 746px;
+    width: 90%;
+  }
+  .about{
+    width: 100%;
   }
   .about h2{
     font-size: 2rem;
@@ -445,7 +474,12 @@ width: 5%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 1px ;
+    gap: 2px;
     
+}
+.reviwe h3{
+   
+    font-size: 2rem;
 }
 .white-line{
     margin-bottom: 20px;
@@ -469,7 +503,7 @@ width: 5%;
 .choose{
     background-color: #230E3D;
     width: 100%;
-    height: 2000px;
+    height: 2200px;
 }
 .card-container h2{
     
@@ -483,10 +517,15 @@ width: 5%;
  }
  
  #episode{
-    
+    padding: 0;
     height: 1600px ;
     
 
+ }
+ .card-container{
+    width: 90%;
+    height: 538px;
+    margin: 0 auto;
  }
  #host-container{
     justify-items: center;
@@ -502,13 +541,27 @@ width: 5%;
  }
 .alex h4{
     margin-top: 1rem;
+    
 }
 .alex img{
     margin: 20px;
  }
  .host h3{
     padding-top: 3rem;
+    font-size: 2rem;
+ }
+ .icons-2{
+    gap: 50px;
+    justify-content: space-around;
+ }
+#footer{
 
+    height: 512px;
 
+}
+.icons-2 h6{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
 }
